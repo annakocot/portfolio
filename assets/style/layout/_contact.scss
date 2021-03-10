@@ -1,0 +1,16 @@
+.contact {
+  background: $color-black;
+  color: $color-purple;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+
+  .socials-heading {
+    font-size: 6rem;
+  }
+
+  .icon {
+    font-size: 4rem;
+    padding: 2rem;
+  }
+}

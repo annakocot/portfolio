@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 2.5rem;
+
+  li {
+    padding: 2rem;
+    font-size: 2rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.logo {
+  width: 10rem;
+}

@@ -1,0 +1,111 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: $color-grey;
+    width: 50rem;
+    height: 60rem;
+    position: absolute;
+    top: 0;
+    right: -5rem;
+    z-index: -1;
+  }
+
+  .project-heading {
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 29rem;
+
+    &::before {
+      content: '';
+      background: #000;
+      height: .2rem;
+      width: 24rem;
+      position: absolute;
+      top: 1rem;
+      right: 9rem;
+    }
+
+    &::after {
+        content: '';
+        background: #000;
+        height: .2rem;
+        width: 24rem;
+        position: absolute;
+        top: 1rem;
+        left: 9rem;
+      }
+  }
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  margin: 10rem auto;
+}
+
+.project{
+  background: url(./../../images/placeholder-sm.png);
+  width: 30rem;
+  height: 30rem;
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    background: #000;
+    width: .2rem;
+    height: 14rem;
+    position: absolute;
+    bottom: -9rem;
+    right: 15rem;
+  }
+
+  &:hover {
+    outline: .2rem solid $color-black;
+  }
+
+  &:hover .project-link {
+    display: block;
+  }
+
+  .project-title {
+    position: absolute;
+    bottom: -11rem;
+    right: 8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $font-primary;
+    font-size: 2rem;
+  }
+
+  .project-link {
+    display: none;
+    margin: 0 auto;
+    padding: 1rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .icon {
+    font-size: 4rem;
+  }
+}
+
+.project-2 {
+  margin-top: 4rem;
+}
+
+.project-3 {
+  margin-top: 6rem;
+}
