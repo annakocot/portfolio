@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna Kocot Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&family=Rozha+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/css/style.css">
+</head>
+
+<body>
+  <nav class="nav">
+    <img src="./assets/images/kocot.png" alt="" class="logo">
+    <h1 class="main-heading">Anna Kocot</h1>
+    <ul class="nav-list">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="about" id="about">
+      <h1 class="about-heading">Welcome</h1>
+      <div class="hero">
+        <img src="./assets/images/placeholder.png" alt="">
+      </div>
+      <div class="description">
+        <h2>hey, there</h2>
+        <p>
+          my name is Anna. I am a front-end developer. I am really smart, a quick learner and the hardest worker
+          you'll ever know. I like plants and cats, although I am higly allergic (to cats).
+        </p>
+
+        <div class="cv"><span class="icon icon--document"></span> Check out my resume</div>
+
+        <div class="technologies">
+          <h3>I use so far:</h3>
+          <span class="icon icon--html5"></span>
+          <span class="icon icon--css3"></span>
+          <span class="icon icon--javascript"></span>
+          <span class="icon icon--git"></span>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h1 class="project-heading">Projects</h1>
+      <ul class="project-list">
+        <li>
+          <div class="project project-1">
+            <a class="project-link" href=""><span class="icon icon--layout"></span></a>
+            <a class="project-link" href=""><span class="icon icon--file-code-o"></span></a>
+            <h2 class="project-title">Animal's Drum Kit</h2>
+          </div>
+        </li>
+        <li>
+          <div class="project project-2">
+            <a class="project-link" href=""><span class="icon icon--layout"></span></a>
+            <a class="project-link" href=""><span class="icon icon--file-code-o"></span></a>
+            <h2 class="project-title">Memory game</h2>
+          </div>
+        </li>
+        <li>
+          <div class="project project-3">
+            <a class="project-link" href=""><span class="icon icon--layout"></span></a>
+            <a class="project-link" href=""><span class="icon icon--file-code-o"></span></a>
+            <h2 class="project-title">Catch the ghost</h2>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="contact" id="contact">
+      <div class="socials">
+        <h2 class="socials-heading">Find me:</h2>
+        <a href=""><span class="icon icon--github"></span></a>
+        <a href=""><span class="icon icon--facebook"></span></a>
+        <a href=""><span class="icon icon--linkedin"></span></a>
+      </div>
+
+      <div id="send_form_status"></div>
+      <form method="post" action="/send_form.php" id="contact_form">
+        <div><label for="email">Adres email</label></div>
+        <div><input type="text" name="email" id="email" class="formField" /></div>
+        <div><label for="message">Treść wiadomości</label></div>
+        <div><textarea name="message" id="message" class="formField"></textarea></div>
+        <div><button id="sendBtn">Wyślij</button></div>
+      </form>
+    </section>
+  </main>
+  <script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src=.assets/scripts/app.js></script>
+</body>
+
+</html>
