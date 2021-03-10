@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/assets/icons/icomoon.ttf") format("truetype"), url("/assets/icons/icomoon.woff") format("woff"), url("/assets/icons/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon--web:before {
+  content: "\e90d";
+}
+
+.icon--mail:before {
+  content: "\e900";
+}
+
+.icon--layout:before {
+  content: "\e901";
+}
+
+.icon--adobexd:before {
+  content: "\e90b";
+  color: #ff2bc2;
+}
+
+.icon--sass:before {
+  content: "\e90c";
+  color: #c69;
+}
+
+.icon--react:before {
+  content: "\e903";
+  color: #61dafb;
+}
+
+.icon--facebook:before {
+  content: "\e904";
+  color: #1877f2;
+}
+
+.icon--linkedin:before {
+  content: "\e905";
+  color: #0077b5;
+}
+
+.icon--css3:before {
+  content: "\e906";
+  color: #1572b6;
+}
+
+.icon--html5:before {
+  content: "\e907";
+  color: #e34f26;
+}
+
+.icon--git:before {
+  content: "\e908";
+  color: #f05032;
+}
+
+.icon--github:before {
+  content: "\e909";
+}
+
+.icon--javascript:before {
+  content: "\e90a";
+  color: #f7df1e;
+}
+
+.icon--file-code-o:before {
+  content: "\f1c9";
+}
+
+.icon--document:before {
+  content: "\e902";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Rozha One", serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.main-heading {
+  font-family: "Rozha One", serif;
+  font-size: 4rem;
+  margin-top: 3rem;
+  text-transform: initial;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 2.5rem;
+}
+
+.nav-list li {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.nav-list li:hover {
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 10rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.about .about-heading {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 0;
+  bottom: 26rem;
+}
+
+.about .about-heading::before {
+  content: '';
+  background: #000;
+  height: .2rem;
+  width: 24rem;
+  position: absolute;
+  top: 1rem;
+  right: 8rem;
+}
+
+.about .description {
+  max-width: 40rem;
+  padding: 2rem;
+  padding-top: 20rem;
+}
+
+.about .description h2 {
+  font-size: 6rem;
+}
+
+.hero {
+  display: block;
+  padding: 4rem;
+  margin-left: 10rem;
+}
+
+.hero::before {
+  content: '';
+  width: 50rem;
+  height: 60rem;
+  background: #CDBAC0;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  z-index: -1;
+}
+
+.cv {
+  font-size: 2.2rem;
+}
+
+.technologies {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem;
+  position: relative;
+}
+
+.projects::before {
+  content: '';
+  background: #EEEEEE;
+  width: 50rem;
+  height: 60rem;
+  position: absolute;
+  top: 0;
+  right: -5rem;
+  z-index: -1;
+}
+
+.projects .project-heading {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  top: 29rem;
+}
+
+.projects .project-heading::before {
+  content: '';
+  background: #000;
+  height: .2rem;
+  width: 24rem;
+  position: absolute;
+  top: 1rem;
+  right: 9rem;
+}
+
+.projects .project-heading::after {
+  content: '';
+  background: #000;
+  height: .2rem;
+  width: 24rem;
+  position: absolute;
+  top: 1rem;
+  left: 9rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  margin: 10rem auto;
+}
+
+.project {
+  background: url(./../../images/placeholder-sm.png);
+  width: 30rem;
+  height: 30rem;
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project::before {
+  content: '';
+  background: #000;
+  width: .2rem;
+  height: 14rem;
+  position: absolute;
+  bottom: -9rem;
+  right: 15rem;
+}
+
+.project:hover {
+  outline: 0.2rem solid #343434;
+}
+
+.project:hover .project-link {
+  display: block;
+}
+
+.project .project-title {
+  position: absolute;
+  bottom: -11rem;
+  right: 8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 2rem;
+}
+
+.project .project-link {
+  display: none;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.project .project-link:hover {
+  transform: scale(1.2);
+}
+
+.project .icon {
+  font-size: 4rem;
+}
+
+.project-2 {
+  margin-top: 4rem;
+}
+
+.project-3 {
+  margin-top: 6rem;
+}
+
+.contact {
+  background: #343434;
+  color: #CDBAC0;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .socials-heading {
+  font-size: 6rem;
+}
+
+.contact .icon {
+  font-size: 4rem;
+  padding: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
