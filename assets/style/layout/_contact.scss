@@ -4,13 +4,67 @@
   padding: 4rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10rem;
+  font-size: 2rem;
 
-  .socials-heading {
+  .contact-heading {
     font-size: 6rem;
+    margin: 2rem 0;
   }
 
   .icon {
     font-size: 4rem;
     padding: 2rem;
+  }
+
+  .social-link {
+    &:hover .icon {
+      transform: scale(1.2);
+    }
+  }
+
+  .mail-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact_form {
+    margin-right: 5rem;
+
+    .formField {
+      border-radius: .2rem;
+      border: none;
+      width: 40rem;
+      font-size: 1.8rem;
+      margin: 1rem 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    #email {
+      height: 2.5rem;
+    }
+
+    #message {
+      height: 15rem;
+    }
+
+    #sendBtn {
+      border: none;
+      border-radius: .2rem;
+      font-family: $font-secondary;
+      padding: .5rem 2rem;
+      background: $color-purple;
+      font-size: 2rem;
+      color: $color-black;
+    }
+  }
+
+  .bitmoji {
+    padding: 2rem;
+    width: 25rem;
   }
 }

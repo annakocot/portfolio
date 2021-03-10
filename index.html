@@ -96,20 +96,24 @@
     </section>
     <section class="contact" id="contact">
       <div class="socials">
-        <h2 class="socials-heading">Find me:</h2>
-        <a href=""><span class="icon icon--github"></span></a>
-        <a href=""><span class="icon icon--facebook"></span></a>
-        <a href=""><span class="icon icon--linkedin"></span></a>
+        <h2 class="contact-heading">Find me:</h2>
+        <div>
+        <a class="social-link" href="https://github.com/annakocot" target="_blank"><span class="icon icon--github"></span></a>
+        <a class="social-link" href="https://www.linkedin.com/in/anna-kocot/" target="_blank"><span class="icon icon--linkedin"></span></a>
+        <a class="social-link" href="https://www.facebook.com/kocotanna" target="_blank"><span class="icon icon--facebook"></span></a>
       </div>
-
-      <div id="send_form_status"></div>
+      <img class="bitmoji" src="./assets/images/bitmoji.png" alt="wink">
+      </div>
+      <div class="mail-form" id="send_form_status">
+      <h2 class="contact-heading">Write to me:</h2>
       <form method="post" action="/send_form.php" id="contact_form">
-        <div><label for="email">Adres email</label></div>
+        <div><label for="email">E-mail adress:</label></div>
         <div><input type="text" name="email" id="email" class="formField" /></div>
-        <div><label for="message">Treść wiadomości</label></div>
+        <div><label for="message">Message:</label></div>
         <div><textarea name="message" id="message" class="formField"></textarea></div>
-        <div><button id="sendBtn">Wyślij</button></div>
+        <div><button id="sendBtn">Send</button></div>
       </form>
+    </div>
     </section>
   </main>
   <script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

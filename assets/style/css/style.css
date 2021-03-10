@@ -435,14 +435,66 @@ p {
   padding: 4rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10rem;
+  font-size: 2rem;
 }
 
-.contact .socials-heading {
+.contact .contact-heading {
   font-size: 6rem;
+  margin: 2rem 0;
 }
 
 .contact .icon {
   font-size: 4rem;
   padding: 2rem;
+}
+
+.contact .social-link:hover .icon {
+  transform: scale(1.2);
+}
+
+.contact .mail-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact #contact_form {
+  margin-right: 5rem;
+}
+
+.contact #contact_form .formField {
+  border-radius: .2rem;
+  border: none;
+  width: 40rem;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.contact #contact_form .formField:focus {
+  outline: none;
+}
+
+.contact #contact_form #email {
+  height: 2.5rem;
+}
+
+.contact #contact_form #message {
+  height: 15rem;
+}
+
+.contact #contact_form #sendBtn {
+  border: none;
+  border-radius: .2rem;
+  font-family: "Rozha One", serif;
+  padding: .5rem 2rem;
+  background: #CDBAC0;
+  font-size: 2rem;
+  color: #343434;
+}
+
+.contact .bitmoji {
+  padding: 2rem;
+  width: 25rem;
 }
 /*# sourceMappingURL=style.css.map */
