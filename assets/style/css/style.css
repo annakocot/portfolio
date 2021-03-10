@@ -278,7 +278,7 @@ p {
   content: '';
   background: #EEEEEE;
   width: 50rem;
-  height: 60rem;
+  height: 109rem;
   position: absolute;
   top: 0;
   right: -5rem;
@@ -306,23 +306,26 @@ p {
   content: '';
   background: #000;
   height: .2rem;
-  width: 24rem;
+  width: 74rem;
   position: absolute;
   top: 1rem;
   left: 9rem;
 }
 
 .project-list {
+  justify-content: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: 10rem auto;
+  max-width: 110rem;
 }
 
 .project {
-  background: url(./../../images/placeholder-sm.png);
   width: 30rem;
   height: 30rem;
   margin: 2rem;
+  border-radius: .2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -343,8 +346,23 @@ p {
   outline: 0.2rem solid #343434;
 }
 
+.project:hover::after {
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: rgba(238, 238, 238, 0.7);
+}
+
 .project:hover .project-link {
   display: block;
+  z-index: 3;
+}
+
+.project:hover .project-title {
+  transform: scale(1.2);
 }
 
 .project .project-title {
@@ -371,12 +389,44 @@ p {
   font-size: 4rem;
 }
 
+.project-1 {
+  background: url(./../../images/animaldrums.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .project-2 {
+  background: url(./../../images/memory.png);
   margin-top: 4rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .project-3 {
+  background: url(./../../images/ghost.png);
   margin-top: 6rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-4 {
+  background: url(./../../images/aspf.png);
+  margin-top: 12rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-5 {
+  background: url(./../../images/camp.png);
+  margin-top: 14rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-6 {
+  background: url(./../../images/survival.png);
+  margin-top: 16rem;
+  background-size: cover;
 }
 
 .contact {
