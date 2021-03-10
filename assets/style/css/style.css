@@ -390,41 +390,41 @@ p {
 }
 
 .project-1 {
-  background: url(./../../images/animaldrums.png);
+  background-image: linear-gradient(to bottom, rgba(205, 186, 192, 0.2), rgba(238, 238, 238, 0.2)), url(./../../images/animaldrums.png);
   background-size: cover;
   background-position: center;
 }
 
 .project-2 {
-  background: url(./../../images/memory.png);
+  background-image: linear-gradient(to bottom, rgba(205, 186, 192, 0.2), rgba(238, 238, 238, 0.2)), url(./../../images/memory.png);
   margin-top: 4rem;
   background-size: cover;
   background-position: center;
 }
 
 .project-3 {
-  background: url(./../../images/ghost.png);
+  background-image: linear-gradient(to bottom, rgba(205, 186, 192, 0.2), rgba(238, 238, 238, 0.2)), url(./../../images/ghost.png);
   margin-top: 6rem;
   background-size: cover;
   background-position: center;
 }
 
 .project-4 {
-  background: url(./../../images/aspf.png);
+  background-image: linear-gradient(to bottom, rgba(205, 186, 192, 0.2), rgba(238, 238, 238, 0.2)), url(./../../images/aspf.png);
   margin-top: 12rem;
   background-size: cover;
   background-position: center;
 }
 
 .project-5 {
-  background: url(./../../images/camp.png);
+  background-image: linear-gradient(to bottom, rgba(205, 186, 192, 0.2), rgba(238, 238, 238, 0.2)), url(./../../images/camp.png);
   margin-top: 14rem;
   background-size: cover;
   background-position: center;
 }
 
 .project-6 {
-  background: url(./../../images/survival.png);
+  background-image: linear-gradient(to bottom, rgba(205, 186, 192, 0.2), rgba(238, 238, 238, 0.2)), url(./../../images/survival.png);
   margin-top: 16rem;
   background-size: cover;
 }
