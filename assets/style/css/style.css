@@ -318,11 +318,17 @@ p {
   content: '';
   background: #EEEEEE;
   width: 50rem;
-  height: 109rem;
+  height: 181rem;
   position: absolute;
   top: 0;
   right: -5rem;
   z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  .projects::before {
+    height: 109rem;
+  }
 }
 
 .projects .project-heading {
@@ -342,10 +348,10 @@ p {
   content: '';
   background: #000;
   height: .2rem;
-  width: 4rem;
+  width: 10rem;
   position: absolute;
   top: 1rem;
-  right: 9rem;
+  right: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -358,10 +364,10 @@ p {
   content: '';
   background: #000;
   height: .2rem;
-  width: 4rem;
+  width: 10rem;
   position: absolute;
   top: 1rem;
-  left: 9rem;
+  left: 1rem;
 }
 
 @media (min-width: 1024px) {
@@ -448,10 +454,12 @@ p {
   }
 }
 
-.project .project-link {
-  display: none;
-  margin: 0 auto;
-  padding: 1rem;
+@media (min-width: 1024px) {
+  .project .project-link {
+    display: none;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
 
 .project .project-link:hover {
@@ -459,7 +467,21 @@ p {
 }
 
 .project .icon {
-  font-size: 4rem;
+  font-size: 2rem;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  .project .icon {
+    font-size: 4rem;
+  }
+}
+
+.project .icon--layout {
+  position: absolute;
+  right: 2rem;
 }
 
 .project-1 {
