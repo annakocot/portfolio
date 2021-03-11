@@ -10,11 +10,11 @@
   &::before {
     content: '';
     background: $color-grey;
-    width: 50rem;
+    width: 35rem;
     height: 181rem;
     position: absolute;
     top: 0;
-    right: -5rem;
+    right: 1rem;
     z-index: -1;
 
     @include media-breakpoint-up(laptop) {
@@ -100,7 +100,6 @@
       right: 15rem;
     }
 
-
   &:hover {
     outline: .2rem solid $color-black;
 
@@ -117,7 +116,6 @@
 
   &:hover .project-link {
     display: block;
-    z-index: 3;
   }
 
   &:hover .project-title {
@@ -126,7 +124,6 @@
 }
 
   .project-title {
-
     text-transform: uppercase;
     font-weight: 500;
     font-family: $font-primary;

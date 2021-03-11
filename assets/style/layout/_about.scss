@@ -3,35 +3,66 @@
   flex-direction: column;
   position: relative;
 
-  @include media-breakpoint-up(laptop) {
+  @include media-breakpoint-up(landscapeTablet) {
     flex-direction: row;
+    margin: 4rem auto;
   }
 
   &::before {
     content: '';
-    width: 50rem;
-    height: 75em;
+    width: 35rem;
+    height: 62em;
     background: $color-purple;
     position: absolute;
-    top: -11rem;
+    top: -6rem;
     left: 0;
     z-index: -1;
 
+    @include media-breakpoint-up(landscapePhone) {
+      width: 42rem;
+      height: 64em;
+    }
+
+    @include media-breakpoint-up(phablet) {
+      width: 49rem;
+    }
+
+    @include media-breakpoint-up(portraitTablet) {
+      width: 53rem;
+      height: 62rem;
+      top: -10rem;
+    }
+
+    @include media-breakpoint-up(landscapeTablet) {
+      width: 46rem;
+      top: -14rem;
+    }
+
     @include media-breakpoint-up(laptop) {
-      height: 60rem;
+      height: 63rem;
+      width: 56rem;
     }
   }
 
 
 
   .about-heading {
-    margin: 2rem;
+    padding: 2rem 14rem;
+
+    @include media-breakpoint-up(portraitTablet) {
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -9rem;
+      bottom: 39rem;
+    }
+
+    @include media-breakpoint-up(landscapeTablet) {
+      left: -14rem;
+      bottom: 13rem;
+    }
 
     @include media-breakpoint-up(laptop) {
-      transform: rotate(-90deg);
-    position: absolute;
-    left: 0;
-    bottom: 26rem;
+      bottom: 18rem;
     }
 
     &::before {
@@ -41,23 +72,31 @@
       width: 13rem;
       position: absolute;
       top: 3rem;
-      right: 9rem;
+      left: 1rem;
 
-
-      @include media-breakpoint-up(laptop) {
-        right: 8rem;
+      @include media-breakpoint-up(portraitTablet) {
+        bottom: 1rem;
+        left: -10rem;
         width: 24rem;
       }
     }
   }
 
   .description {
-    max-width: 40rem;
+    max-width: 34rem;
     padding: 2rem;
 
+    @include media-breakpoint-up(landscapePhone) {
+      margin: 0 auto;
+    }
 
     @include media-breakpoint-up(laptop) {
-      padding-top: 20rem;
+      padding-top: 11rem;
+      max-width: 40rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      margin-left: 3rem;
     }
 
     h2 {
@@ -95,9 +134,24 @@
   width: 28rem;
   height: 28rem;
 
+  @include media-breakpoint-up(landscapePhone) {
+    margin: 0 auto;
+    width: 34rem;
+    height: 34rem;
+  }
+
+  @include media-breakpoint-up(landscapeTablet) {
+    margin-left: 8rem;
+  }
+
   @include media-breakpoint-up(laptop) {
-  margin-left: 10rem;
-  width: 40rem;
-  height: 40rem;
+    margin-left: 10rem;
+    width: 40rem;
+    height: 40rem;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    margin-right: 0;
+    margin-left: 25rem;
   }
 }

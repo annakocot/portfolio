@@ -1,18 +1,24 @@
 .nav {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .nav-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-left: auto;
-  margin-top: 2.5rem;
+
+
+  @include media-breakpoint-up(portraitTablet) {
+    margin-left: auto;
+    margin-top: 2.5rem;
+  }
 
   li {
     padding: 2rem;
     font-size: 2rem;
+    text-align: center;
 
     &:hover {
       transform: scale(1.2);
