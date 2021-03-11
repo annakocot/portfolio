@@ -1,6 +1,10 @@
 .projects {
   position: relative;
 
+  @include media-breakpoint-up(landscapeTablet) {
+    margin-top: 20rem;
+  }
+
   @include media-breakpoint-up(laptop) {
     display: flex;
     margin: 5rem;
@@ -17,6 +21,17 @@
     right: 1rem;
     z-index: -1;
 
+    @include media-breakpoint-up(landscapePhone){
+      width: 38rem;
+      height: 185rem;
+      right: 0;
+    }
+
+    @include media-breakpoint-up(portraitTablet) {
+      width: 48rem;
+      height: 91rem;
+    }
+
     @include media-breakpoint-up(laptop) {
       height: 109rem;
     }
@@ -24,11 +39,20 @@
 
   .project-heading {
     margin: 0 12rem;
+    padding: 2rem;
 
-    @include media-breakpoint-up(laptop) {
+    @include media-breakpoint-up(landscapePhone) {
+      margin: 0 20rem;
+    }
+
+    @include media-breakpoint-up(phablet) {
+      margin: 0 32rem;
+    }
+
+    @include media-breakpoint-up(portraitTablet) {
       transform: rotate(90deg);
       position: absolute;
-      right: 0;
+      right: -30rem;
       top: 29rem;
     }
 
@@ -36,10 +60,19 @@
       content: '';
       background: #000;
       height: .2rem;
-      width: 10rem;
+      width: 12rem;
       position: absolute;
-      top: 1rem;
+      top: 3rem;
       right: 1rem;
+
+      @include media-breakpoint-up(landscapePhone) {
+        width: 16rem;
+      }
+
+      @include media-breakpoint-up(portraitTablet) {
+        width: 26rem;
+        right: 11rem;
+      }
 
       @include media-breakpoint-up(laptop) {
         width: 24rem;
@@ -50,10 +83,24 @@
       content: '';
       background: #000;
       height: .2rem;
-      width: 10rem;
+      width: 12rem;
       position: absolute;
-      top: 1rem;
+      top: 3rem;
       left: 1rem;
+
+      @include media-breakpoint-up(landscapePhone) {
+        width: 11rem;
+        left: 11rem;
+      }
+
+      @include media-breakpoint-up(phablet) {
+        left: 23rem;
+      }
+
+      @include media-breakpoint-up(portraitTablet) {
+        left: 11rem;
+        width: 53rem;
+      }
 
       @include media-breakpoint-up(laptop) {
         width: 74rem;
@@ -70,8 +117,13 @@
   margin: 2rem;
   max-width: 110rem;
 
-  @include media-breakpoint-up(laptop) {
+  @include media-breakpoint-up(portraitTablet) {
     flex-direction: row;
+    max-width: 70rem;
+  }
+
+  @include media-breakpoint-up(laptop) {
+
     margin: 10rem auto;
   }
 }
@@ -79,12 +131,16 @@
 .project {
   width: 25rem;
   height: 25rem;
-  margin: 2rem;
+  margin: 2rem auto;
   border-radius: .2rem;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include media-breakpoint-up(portraitTablet) {
+    margin: 2rem;
+  }
 
   @include media-breakpoint-up(laptop) {
     width: 30rem;
@@ -100,28 +156,28 @@
       right: 15rem;
     }
 
-  &:hover {
-    outline: .2rem solid $color-black;
+    &:hover {
+      outline: .2rem solid $color-black;
 
-    &::after {
-      width: 30rem;
-      height: 30rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: '';
-      background: rgba($color-grey, .7);
+      &::after {
+        width: 30rem;
+        height: 30rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        background: rgba($color-grey, .7);
+      }
+    }
+
+    &:hover .project-link {
+      display: block;
+    }
+
+    &:hover .project-title {
+      transform: scale(1.2);
     }
   }
-
-  &:hover .project-link {
-    display: block;
-  }
-
-  &:hover .project-title {
-    transform: scale(1.2);
-  }
-}
 
   .project-title {
     text-transform: uppercase;
@@ -140,9 +196,9 @@
   .project-link {
 
     @include media-breakpoint-up(laptop) {
-    display: none;
-    margin: 0 auto;
-    padding: 1rem;
+      display: none;
+      margin: 0 auto;
+      padding: 1rem;
     }
 
     &:hover {
@@ -157,8 +213,8 @@
     right: 0;
 
     @include media-breakpoint-up(laptop) {
-    font-size: 4rem;
-  }
+      font-size: 4rem;
+    }
   }
 
   .icon--layout {
