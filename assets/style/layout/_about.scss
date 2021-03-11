@@ -5,11 +5,26 @@
 
   @include media-breakpoint-up(laptop) {
     flex-direction: row;
-
   }
 
-  .about-heading {
+  &::before {
+    content: '';
+    width: 50rem;
+    height: 75em;
+    background: $color-purple;
+    position: absolute;
+    top: -11rem;
+    left: 0;
+    z-index: -1;
 
+    @include media-breakpoint-up(laptop) {
+      height: 60rem;
+    }
+  }
+
+
+
+  .about-heading {
     margin: 2rem;
 
     @include media-breakpoint-up(laptop) {
@@ -84,16 +99,5 @@
   margin-left: 10rem;
   width: 40rem;
   height: 40rem;
-  }
-
-  &::before {
-    content: '';
-    width: 50rem;
-    height: 60rem;
-    background: $color-purple;
-    position: absolute;
-    top: -10rem;
-    left: 0;
-    z-index: -1;
   }
 }
