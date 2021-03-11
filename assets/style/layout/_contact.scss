@@ -1,12 +1,17 @@
 .contact {
   background: $color-black;
   color: $color-purple;
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   margin-top: 10rem;
   font-size: 2rem;
+
+  @include media-breakpoint-up(laptop) {
+    flex-direction: row;
+    padding: 4rem;
+  }
 
   .contact-heading {
     font-size: 6rem;
@@ -35,9 +40,13 @@
     .formField {
       border-radius: .2rem;
       border: none;
-      width: 40rem;
+      width: 28rem;
       font-size: 1.8rem;
       margin: 1rem 0;
+
+      @include media-breakpoint-up(laptop) {
+        width: 40rem;
+      }
 
       &:focus {
         outline: none;
