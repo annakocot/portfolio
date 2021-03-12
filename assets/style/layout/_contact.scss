@@ -4,12 +4,12 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   margin-top: 10rem;
   font-size: 2rem;
 
-  @include media-breakpoint-up(laptop) {
+  @include media-breakpoint-up(portraitTablet) {
     flex-direction: row;
+    justify-content: space-around;
     padding: 4rem;
   }
 
@@ -17,6 +17,18 @@
     font-size: 6rem;
     margin: 2rem 0;
     max-width: 34rem;
+
+    @include media-breakpoint-up(desktop) {
+      max-width: 35rem;
+    }
+  }
+
+  .socials {
+    margin: 0 auto;
+
+    @include media-breakpoint-up(desktop) {
+      margin: 0;
+    }
   }
 
   .icon {
@@ -33,6 +45,19 @@
   .mail-form {
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
+
+    @include media-breakpoint-up(landscapePhone) {
+      margin-left: 9rem;
+    }
+
+    @include media-breakpoint-up(phablet) {
+      margin-left: 15rem;
+    }
+
+    @include media-breakpoint-up(portraitTablet) {
+      margin-left: 0;
+    }
   }
 
   #contact_form {
