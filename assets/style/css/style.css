@@ -580,11 +580,6 @@ p {
 @media (min-width: 1024px) {
   .project-list {
     margin: 10rem auto;
-  }
-}
-
-@media (min-width: 1280px) {
-  .project-list {
     max-width: 105rem;
   }
 }
