@@ -33,7 +33,14 @@
     }
 
     @include media-breakpoint-up(laptop) {
-      height: 109rem;
+      height: 141rem;
+      width: 60rem;
+      right: -5rem;
+      top: 8rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      height: 100rem;
     }
   }
 
@@ -54,6 +61,14 @@
       position: absolute;
       right: -30rem;
       top: 29rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      top: 35rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      right: -35rem;
     }
 
     &::before {
@@ -103,7 +118,11 @@
       }
 
       @include media-breakpoint-up(laptop) {
-        width: 74rem;
+        width: 105rem;
+      }
+
+      @include media-breakpoint-up(desktop) {
+        width: 64rem;
       }
     }
   }
@@ -123,8 +142,11 @@
   }
 
   @include media-breakpoint-up(laptop) {
-
     margin: 10rem auto;
+  }
+
+  @include media-breakpoint-up(desktop) {
+    max-width: 105rem;
   }
 }
 
@@ -249,6 +271,10 @@
   background-position: center;
 
   @include media-breakpoint-up(laptop) {
+    margin-top: 10rem;
+  }
+
+  @include media-breakpoint-up(desktop) {
     margin-top: 6rem;
   }
 }

@@ -439,7 +439,16 @@ p {
 
 @media (min-width: 1024px) {
   .projects::before {
-    height: 109rem;
+    height: 141rem;
+    width: 60rem;
+    right: -5rem;
+    top: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects::before {
+    height: 100rem;
   }
 }
 
@@ -466,6 +475,18 @@ p {
     position: absolute;
     right: -30rem;
     top: 29rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects .project-heading {
+    top: 35rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects .project-heading {
+    right: -35rem;
   }
 }
 
@@ -530,7 +551,13 @@ p {
 
 @media (min-width: 1024px) {
   .projects .project-heading::after {
-    width: 74rem;
+    width: 105rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects .project-heading::after {
+    width: 64rem;
   }
 }
 
@@ -553,6 +580,12 @@ p {
 @media (min-width: 1024px) {
   .project-list {
     margin: 10rem auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project-list {
+    max-width: 105rem;
   }
 }
 
@@ -678,6 +711,12 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .project-3 {
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
   .project-3 {
     margin-top: 6rem;
   }
