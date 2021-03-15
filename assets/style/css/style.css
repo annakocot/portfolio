@@ -220,7 +220,7 @@ p {
 .about::before {
   content: '';
   width: 35rem;
-  height: 62em;
+  height: 65em;
   background: #CDBAC0;
   position: absolute;
   top: -6rem;
@@ -231,7 +231,7 @@ p {
 @media (min-width: 480px) {
   .about::before {
     width: 42rem;
-    height: 64em;
+    height: 69rem;
   }
 }
 
@@ -243,23 +243,23 @@ p {
 
 @media (min-width: 768px) {
   .about::before {
-    width: 53rem;
-    height: 62rem;
+    width: 56rem;
+    height: 67rem;
     top: -10rem;
   }
 }
 
 @media (min-width: 840px) {
   .about::before {
-    width: 46rem;
+    width: 44rem;
     top: -14rem;
   }
 }
 
 @media (min-width: 1024px) {
   .about::before {
-    height: 63rem;
-    width: 56rem;
+    height: 65rem;
+    width: 54rem;
   }
 }
 
@@ -318,6 +318,12 @@ p {
   }
 }
 
+@media (min-width: 840px) {
+  .about .description {
+    margin-left: -5rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .about .description {
     padding-top: 11rem;
@@ -359,16 +365,18 @@ p {
   display: block;
   padding: 4rem;
   margin: 2rem;
-  background: url("./../../images/placeholder.png");
+  background: url("./../../images/me.jpg");
+  background-size: cover;
+  background-position: top;
   width: 28rem;
-  height: 28rem;
+  height: 30rem;
 }
 
 @media (min-width: 480px) {
   .hero {
     margin: 0 auto;
     width: 34rem;
-    height: 34rem;
+    height: 37rem;
   }
 }
 
@@ -382,7 +390,7 @@ p {
   .hero {
     margin-left: 10rem;
     width: 40rem;
-    height: 40rem;
+    height: 43rem;
   }
 }
 
@@ -574,6 +582,12 @@ p {
   .project-list {
     flex-direction: row;
     max-width: 70rem;
+  }
+}
+
+@media (min-width: 840px) {
+  .project-list {
+    margin-left: 13rem;
   }
 }
 

@@ -141,6 +141,10 @@
     max-width: 70rem;
   }
 
+  @include media-breakpoint-up(landscapeTablet) {
+    margin-left: 13rem;
+  }
+
   @include media-breakpoint-up(laptop) {
     margin: 10rem auto;
     max-width: 105rem;
