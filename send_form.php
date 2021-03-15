@@ -1,24 +1,13 @@
 <?php
-header("content-type: application/json; charset=utf-8");
-$name=isset($_POST['name']) ? $_POST['name'] : "";
-$email=isset($_POST['email']) ? $_POST['email'] : "";
-$phone=isset($_POST['phone']) ? $_POST['phone'] : "";
-$message=isset($_POST['message']) ? $_POST['message'] : "";
-if($name && $email && $phone && $message){
- $headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit";
- $message_body="Formularz kontaktowy wysłany ze strony www.annakocot.com\n";
- $message_body.="Adres email: $email\n";
- $message_body.=$message;
- if(mail("annakocot@tutamail.com","Formularz kontaktowy",$message_body,$headers)){
- $json=array("status"=>1,"msg"=>"<p class='status_ok'>Twoja wiadomość została pomyślnie wysłana.</p>");
- }
- else{
- $json=array("status"=>0,"msg"=>"<p class='status_err'>Wystąpił problem z wysłaniem formularza.</p>");
- }
+if (isset($_POST['sendBtn'])) {
+  $mailFrom = $_POST['email'];
+  $message = $_POST['message'];
+
+  $mailTo = "annakocot@tutamail.com";
+  $headers = "From: ".$mailFrom;
+  $txt = .$message;
+
+  mail($mailTo, $txt, $headers);
+  header("Location: index.php?mailsend");
 }
-else{
- $json=array("status"=>0,"msg"=>"<p class='status_err'>Proszę wypełnić wszystkie pola przed wysłaniem.</p>");
-}
-echo json_encode($json);
-exit;
 ?>
