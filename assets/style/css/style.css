@@ -45,7 +45,7 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("/assets/icons/icomoon.ttf") format("truetype"), url("/assets/icons/icomoon.woff") format("woff"), url("/assets/icons/icomoon.svg") format("svg");
+  src: url("./../../icons/icomoon.ttf") format("truetype"), url("./../../icons/icomoon.woff") format("woff"), url("./../../icons/icomoon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -447,7 +447,7 @@ p {
 
 @media (min-width: 1024px) {
   .projects::before {
-    height: 141rem;
+    height: 105rem;
     width: 60rem;
     right: -5rem;
     top: 8rem;
@@ -489,6 +489,7 @@ p {
 @media (min-width: 1024px) {
   .projects .project-heading {
     top: 35rem;
+    right: -39rem;
   }
 }
 
@@ -559,7 +560,7 @@ p {
 
 @media (min-width: 1024px) {
   .projects .project-heading::after {
-    width: 105rem;
+    width: 68rem;
   }
 }
 
@@ -892,5 +893,13 @@ p {
 .contact .bitmoji {
   padding: 2rem;
   width: 25rem;
+}
+
+.footer {
+  background: #343434;
+  color: #EEEEEE;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-align: center;
+  padding: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

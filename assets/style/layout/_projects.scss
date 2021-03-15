@@ -33,7 +33,7 @@
     }
 
     @include media-breakpoint-up(laptop) {
-      height: 141rem;
+      height: 105rem;
       width: 60rem;
       right: -5rem;
       top: 8rem;
@@ -65,6 +65,7 @@
 
     @include media-breakpoint-up(laptop) {
       top: 35rem;
+      right: -39rem;
     }
 
     @include media-breakpoint-up(desktop) {
@@ -118,7 +119,7 @@
       }
 
       @include media-breakpoint-up(laptop) {
-        width: 105rem;
+        width: 68rem;
       }
 
       @include media-breakpoint-up(desktop) {
