@@ -27,7 +27,7 @@
     margin: 0 auto;
 
     @include media-breakpoint-up(desktop) {
-      margin: 0;
+      margin: 0 8rem;
     }
   }
 

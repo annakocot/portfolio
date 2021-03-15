@@ -82,6 +82,38 @@
     }
   }
 
+  .hero {
+    display: block;
+    padding: 4rem;
+    margin: 2rem;
+    background: url('./../../images/me.jpg');
+    background-size: cover;
+    background-position: top;
+    width: 28rem;
+    height: 30rem;
+
+    @include media-breakpoint-up(landscapePhone) {
+      margin: 0 auto;
+      width: 34rem;
+      height: 37rem;
+    }
+
+    @include media-breakpoint-up(landscapeTablet) {
+      margin-left: 8rem;
+    }
+
+    @include media-breakpoint-up(laptop) {
+      margin-left: 10rem;
+      width: 40rem;
+      height: 43rem;
+    }
+
+    @include media-breakpoint-up(desktop) {
+      margin-right: 0;
+      margin-left: 25rem;
+    }
+  }
+
   .description {
     max-width: 34rem;
     padding: 2rem;
@@ -129,36 +161,4 @@
     }
   }
 
-}
-
-.hero {
-  display: block;
-  padding: 4rem;
-  margin: 2rem;
-  background: url('./../../images/me.jpg');
-  background-size: cover;
-  background-position: top;
-  width: 28rem;
-  height: 30rem;
-
-  @include media-breakpoint-up(landscapePhone) {
-    margin: 0 auto;
-    width: 34rem;
-    height: 37rem;
-  }
-
-  @include media-breakpoint-up(landscapeTablet) {
-    margin-left: 8rem;
-  }
-
-  @include media-breakpoint-up(laptop) {
-    margin-left: 10rem;
-    width: 40rem;
-    height: 43rem;
-  }
-
-  @include media-breakpoint-up(desktop) {
-    margin-right: 0;
-    margin-left: 25rem;
-  }
 }
