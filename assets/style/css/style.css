@@ -328,6 +328,7 @@ p {
   .about .description {
     padding-top: 11rem;
     max-width: 40rem;
+    margin-left: -15rem;
   }
 }
 

@@ -97,6 +97,7 @@
     @include media-breakpoint-up(laptop) {
       padding-top: 11rem;
       max-width: 40rem;
+      margin-left: -15rem;
     }
 
     @include media-breakpoint-up(desktop) {
